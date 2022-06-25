@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="area" value="KR Puram"/>
+  <parameter name="regPassword" value="Intel@123"/>
+  <parameter name="path" value=".\\src\\test\\resources\\Testfolder\\Output.xlsx"/>
+  <parameter name="pincode" value="560049"/>
+  <parameter name="searchText" value="Mobile Phone"/>
+  <parameter name="productSearch" value="iPhone 12"/>
+  <parameter name="phoneNumber" value="9988776655"/>
+  <parameter name="address" value="202,IJ Acacia Apartments, Seegehalli"/>
+  <parameter name="regUserName" value="8122168871"/>
+  <parameter name="Sheetname" value="productNameWithPrice"/>
+  <parameter name="name" value="Ajinesh"/>
+  <parameter name="desiredProduct" value="APPLE iPhone 12 (White, 64 GB)"/>
+  <test thread-count="5" name="Project.E_Commerce(failed)">
+    <classes>
+      <class name="Project.E_Commerce.ProductDetails">
+        <methods>
+          <include name="extentreportsConfig"/>
+          <include name="getLoginForm"/>
+          <include name="Initializebrowser"/>
+          <include name="addToCart"/>
+        </methods>
+      </class> <!-- Project.E_Commerce.ProductDetails -->
+    </classes>
+  </test> <!-- Project.E_Commerce(failed) -->
+</suite> <!-- Failed suite [Suite] -->
